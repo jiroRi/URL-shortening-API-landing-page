@@ -1,0 +1,24 @@
+$primary: (
+    cyan: hsl(180, 66%, 49%),
+    violet: hsl(257, 27%, 26%),
+    light-cyan: hsl(179, 56%, 75%)
+);
+
+$secondary: (
+    red: hsl(0, 87%, 67%)
+);
+
+$neutral: (
+    gray: hsl(0, 0%, 75%),
+    grayish-violet: hsl(257, 7%, 63%),
+    dark-blue: hsl(255, 11%, 22%),
+    dark-violet: hsl(260, 8%, 14%),
+    white: hsl(0, 0%, 100%),
+    bg: hsl(230, 25%, 95%)
+);
+
+$box-shadow: (
+    cta: 0 4px 8px hsla(180, 66%, 49%, 0.05),
+    shorten-it: 0 8px 16px hsla(256, 26%, 20%, 0.15),
+    item: 0 2px 4px hsla(260, 8%, 14%, 0.05)
+);

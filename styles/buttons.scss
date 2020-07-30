@@ -1,0 +1,132 @@
+@import './colors.scss';
+@import './shared.scss';
+
+#hamburger {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    width: 24px;
+    height: 31px;
+
+    border: none;
+    padding: 5px 0;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    background-color: transparent;
+
+    span {
+        width: 100%;
+        height: 3px;
+
+        background-color: map-get($neutral, grayish-violet);
+    }
+
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
+
+.btn {
+    font-size: map-get($font-size, subtitle-mobile);
+    font-weight: 700;
+    line-height: 20px;
+
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-color {
+    background-color: map-get($primary, cyan);
+    color: map-get($neutral, white);
+
+    box-shadow: map-get($box-shadow, cta);
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: map-get($primary, light-cyan);
+    }
+    &:active {
+        background-color: map-get($primary, cyan);
+    }
+}
+
+.btn-round {
+    box-sizing: border-box;
+    padding: 18px 40px;
+    border-radius: 30px;
+    max-width: 200px;
+}
+
+.btn-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shorten-it__input {
+
+    #shorten-it__input-link {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        height: 48px;
+    
+        margin-bottom: 16px;
+        padding: 2px 0 0 16px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+
+        color: map-get($neutral, sub);
+        font-size: map-get($font-size, input-mobile);
+        font-weight: 500;
+        line-height: 16px;
+
+        @media(min-width: 768px) {
+            margin-bottom: 0;
+
+            height: 64px;
+        }
+
+        @media(min-width: 1024px) {
+            font-size: map-get($font-size, input-desktop);
+            line-height: 20px;
+
+            padding: 4px 0 0 32px;
+        }
+
+        &::placeholder {
+            font-size: map-get($font-size, input-mobile);
+            font-weight: 500;
+        
+            line-height: 16px;
+            letter-spacing: 2.5%;
+    
+                @media(min-width: 1024px) {
+                    font-size: map-get($font-size, input-desktop);
+                    line-height: 20px;
+                }
+            }
+    }
+
+    a {
+        width: 100%;
+        height: 48px;
+
+        border-radius: 4px;
+
+        @media(min-width: 768px) {
+            margin-left: 24px;
+
+            height: 64px;
+            max-width: 190px;
+        }
+    }
+}
