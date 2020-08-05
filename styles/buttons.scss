@@ -56,6 +56,22 @@
     }
 }
 
+.copy-btn {
+    color: map-get($primary, white);
+
+    @keyframes copyBtnTransition {
+        0% {
+            color: map-get($primary, white);
+        }
+        50% {
+            color: transparent;
+        }
+        100% {
+            color: map-get($primary, white)
+        }
+    }
+}
+
 .btn-round {
     box-sizing: border-box;
     padding: 18px 40px;
@@ -78,7 +94,7 @@
         width: 100%;
         height: 48px;
     
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         padding: 2px 0 0 16px;
         box-sizing: border-box;
         border: none;
@@ -89,10 +105,17 @@
         font-weight: 500;
         line-height: 16px;
 
+        outline: none;
+
+        &:focus {
+            border: 3px solid map-get($primary, cyan);
+        }
+
         @media(min-width: 768px) {
             margin-bottom: 0;
 
             height: 64px;
+            border-radius: 8px;
         }
 
         @media(min-width: 1024px) {
@@ -127,6 +150,15 @@
 
             height: 64px;
             max-width: 190px;
+            border-radius: 8px;
         }
+    }
+}
+
+#shorten-it__btn {
+    margin-top: 8px;
+
+    @media(min-width: 768px) {
+        margin-top: 0;
     }
 }

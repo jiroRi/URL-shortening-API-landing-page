@@ -188,6 +188,31 @@ body {
     }
 }
 
+#add-link--error {
+    display: none;
+
+    width: 100%;
+    color: map-get($secondary, red);
+    font-size: map-get($font-size, error-message-mobile);
+    font-style: italic;    
+    line-height: 12px;
+    text-align: left;
+
+    margin: 0 0 8px 0;
+
+    @media(min-width: 768px) {
+        position: absolute;
+        bottom: 8px;
+
+        margin: 0;
+    }
+
+    @media(min-width: 1024px) {
+        bottom: 24px;
+        font-size: map-get($font-size, error-message-desktop);
+    }
+}
+
 .shorten-it__container {
     display: flex;
     flex-flow: column;

@@ -471,6 +471,26 @@ footer .logo {
   background-color: #2acfcf;
 }
 
+@-webkit-keyframes copyBtnTransition {
+  0% {
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+  }
+}
+
+@keyframes copyBtnTransition {
+  0% {
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+  }
+}
+
 .btn-round {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -500,7 +520,7 @@ footer .logo {
           align-items: center;
   width: 100%;
   height: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 2px 0 0 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -509,12 +529,18 @@ footer .logo {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  outline: none;
+}
+
+.shorten-it__input #shorten-it__input-link:focus {
+  border: 3px solid #2acfcf;
 }
 
 @media (min-width: 768px) {
   .shorten-it__input #shorten-it__input-link {
     margin-bottom: 0;
     height: 64px;
+    border-radius: 8px;
   }
 }
 
@@ -584,6 +610,17 @@ footer .logo {
     margin-left: 24px;
     height: 64px;
     max-width: 190px;
+    border-radius: 8px;
+  }
+}
+
+#shorten-it__btn {
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  #shorten-it__btn {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=buttons.css.map */
