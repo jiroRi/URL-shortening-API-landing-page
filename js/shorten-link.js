@@ -134,11 +134,12 @@ shortenItBtn.addEventListener('click', () => {
     if(inputLink.value != "") {
         createShortenedLinkItem()
         withLink()
+        sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
     }
     else {
         noLink()
     }
 })
 
-sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
 console.log(sessionStorage.getItem('shortenedLinksList'))
+shortenedLinks.innerHTML = sessionStorage.getItem('shortenedLinksList')
