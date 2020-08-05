@@ -53,7 +53,7 @@ let createShortenedLinkItem = () => {
 
     /*shortened url */
     shortenedLinksShortenedURL = document.createElement('p')
-    shortenedLinksShortenedURL.innerHTML = `...`
+    /* shortenedLinksShortenedURL.innerHTML = `...` */
     shortenedLinksShortenedURL.setAttribute('class', 'shorten-it__links-item--result-url')
     shortenedLinksResultContainer.appendChild(shortenedLinksShortenedURL)
 
@@ -141,5 +141,4 @@ shortenItBtn.addEventListener('click', () => {
     }
 })
 
-console.log(sessionStorage.getItem('shortenedLinksList'))
 shortenedLinks.innerHTML = sessionStorage.getItem('shortenedLinksList')
