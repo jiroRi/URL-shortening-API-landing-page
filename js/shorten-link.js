@@ -140,3 +140,5 @@ shortenItBtn.addEventListener('click', () => {
     }
 })
 
+sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
+console.log(sessionStorage.getItem('shortenedLinksList'))
