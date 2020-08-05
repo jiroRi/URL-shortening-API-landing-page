@@ -130,8 +130,6 @@ let withLink = () => {
     inputLink.style.color = `hsl(260, 8%, 14%)`
 }
 
-copyToClipboard()
-
 shortenItBtn.addEventListener('click', () => {
     if(inputLink.value != "") {
         createShortenedLinkItem()
@@ -143,3 +141,4 @@ shortenItBtn.addEventListener('click', () => {
 })
 
 shortenedLinks.innerHTML = sessionStorage.getItem('shortenedLinksList')
+copyToClipboard()
