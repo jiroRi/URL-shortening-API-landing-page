@@ -103,10 +103,10 @@ let setShortenedLinkContent = () => {
     then(results => {
         shortenedLinksShortenedURL.innerHTML = results.url.replace('/api/links/','/')
         copyToClipboard()
+        sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
     }).
     catch(err => console.error(err))
 
-    sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
 }
 
 let noLink = () => {
