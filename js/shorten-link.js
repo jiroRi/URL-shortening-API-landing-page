@@ -105,6 +105,8 @@ let setShortenedLinkContent = () => {
         copyToClipboard()
     }).
     catch(err => console.error(err))
+
+    sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
 }
 
 let noLink = () => {
@@ -134,7 +136,6 @@ shortenItBtn.addEventListener('click', () => {
     if(inputLink.value != "") {
         createShortenedLinkItem()
         withLink()
-        sessionStorage.setItem('shortenedLinksList', shortenedLinks.innerHTML)
     }
     else {
         noLink()
