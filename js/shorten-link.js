@@ -111,9 +111,10 @@ let setShortenedLinkContent = () => {
 
 let noLink = () => {
     inputLink.style.border = `3px solid hsl(0, 87%, 67%)`
-    noLinkError.style.display = `block`
     inputLink.value = `Shorten a link here...`
     inputLink.style.color = `hsl(0, 87%, 67%)` 
+
+    noLinkError.style.display = `block`
 
     inputLink.addEventListener('focus', () => {
         inputLink.style.color = `hsl(260, 8%, 14%)`
